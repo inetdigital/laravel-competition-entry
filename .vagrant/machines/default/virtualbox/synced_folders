@@ -1,0 +1,1 @@
+{"virtualbox":{"/var/www/dewsign-mf":{"type":null,"mount_options":[],"guestpath":"/var/www/dewsign-mf","hostpath":"/Users/inetdigital/www/dewsign-mf","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/inetdigital/www/dewsign-mf","disabled":false,"__vagrantfile":true}}}
