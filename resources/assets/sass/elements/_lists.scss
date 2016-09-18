@@ -1,0 +1,28 @@
+ul.list-group {
+  li {
+    list-style-type: none;
+    &.social-icon {
+      display: inline-block;
+      padding-right: 15px;
+      i {
+        font-size: 3em;
+        transition: color 0.5s ease;
+        &.fa-facebook-official {
+          color: $facebook;
+        }
+        &.fa-twitter {
+          color: $twitter;
+        }
+        &.fa-instagram {
+          color: $instagram;
+        }
+        &.fa-flickr {
+          color: $flickr;
+        }
+        &:hover {
+          color: $mid-grey;
+        }
+      }
+    }
+  }
+}

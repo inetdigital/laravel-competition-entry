@@ -1,0 +1,26 @@
+/* Backgrounds */
+.bg-l-grey {
+  background-color: $light-grey;
+}
+
+.bg-pink {
+  background-color: $brand-primary;
+}
+
+/* Text colors */
+.white {
+  color: $white;
+}
+
+.brand-pink {
+  color: $brand-primary;
+}
+
+/* Links */
+.btn {
+  transition: background-color 0.5s ease;
+}
+
+a {
+  transition: color 0.5s ease;
+}

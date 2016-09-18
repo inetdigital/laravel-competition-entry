@@ -1,0 +1,14 @@
+.jumbotron {
+  background: transparent;
+  margin-bottom: 0px;
+  #logo {
+    background-image: url("/images/branding/logo-max-factor.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    text-indent: -9999px;
+    width: auto;
+    height: 100px;
+    display: block;
+  }
+}
