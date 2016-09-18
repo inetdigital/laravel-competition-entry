@@ -9,21 +9,29 @@ Composer - https://getcomposer.org/
 
 # Setup 
 
-1) Install homestead using composer - $ composer require laravel/homestead --dev
+1) Install homestead using composer - $composer require laravel/homestead --dev
 
-2) Generate Vagrantfile and homestead.yaml - $ php vendor/bin/homestead make
+2) Generate Vagrantfile and homestead.yaml - $php vendor/bin/homestead make
 
 3) By default the app will be available at http://homestead.app - edit Homestead.yaml line 19 to change 
 
 4) Add local host record - ip homestead.app I.E 192.168.10.10 homestead.app (editable in lines 2 & 19 of homestead.yaml)
 
-5) CD to local route directory - rename .env.example to .env
+5) Install NPM Dependencies - $npm install  
 
-6) Generate key - $ php artisan key:generate
+6) build vagrant box - $vagrant up --provision
 
-8) Install NPM Dependencies - $ npm install 
+7) SSH into vagrant VM - $vagrant ssh
 
-7) build vagrant box - $ vagrant up --provision
+8) CD to root directory /var/www/dewsign/
+
+9) Run DB migrations - $php artisan migrate
+
+10) Run DB seeders - $php artisan db:seed
+
+11) Open http://homestead.app in web browser
+
+12) To view entries, click Admin Login - credentials: admin@admin.com : p@ssw0rd!16
 
 # Gulp
 
