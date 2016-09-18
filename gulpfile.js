@@ -15,7 +15,9 @@ require('es6-promise').polyfill();
 
 elixir(function(mix) {
   var bootstrapPath = 'node_modules/bootstrap-sass/assets';
+  var fontAwePath = 'node_modules/font-awesome';
   mix.sass('app.scss')
     .copy(bootstrapPath + '/fonts', 'public/fonts')
-    .copy(bootstrapPath + '/javascripts/bootstrap.min.js', 'public/js');
+    .copy(bootstrapPath + '/javascripts/bootstrap.min.js', 'public/js')
+    .copy(fontAwePath + '/fonts', 'public/fonts');
 });
