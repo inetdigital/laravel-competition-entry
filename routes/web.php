@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/', 'PageController@home')->name('home');
+
+Route::resource('welcome', 'CompController');
+Auth::routes();
+Route::get('logout', function(){
+    Auth::logout(); // logout user
+    return Redirect::to('/');
+});
+
+Route::get('/home', 'HomeController@index');
